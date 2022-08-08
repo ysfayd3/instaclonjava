@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtxt" />
+
+    <Button
+        android:id="@+id/signInbtn"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:onClick="signin"
+        android:text="Sign in"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/passwordtxt"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtxt" />
+
+    <Button
+        android:id="@+id/signUpbtn"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:onClick="signup"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordtxt"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
